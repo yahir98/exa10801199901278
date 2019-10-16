@@ -32,7 +32,7 @@ router.post('/new', function(req, res){
            "url":req.body.url,
            "thum":req.body.thum,
            "album ":req.body.album
-           //"cuotaMensual": parseFloat(req.body.cuotaMensual)
+           
        }
     );
     var fotografiasExists = foCollection.find(

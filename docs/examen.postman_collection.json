@@ -1,0 +1,184 @@
+{
+	"id": "a25cbf98-d03e-4a6f-8199-8ce7a87eb319",
+	"name": "examen",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"20af98c6-4b02-482a-9378-5af5c4dc8d45",
+		"c3b876b2-c81d-49ee-ab84-c138e5137f78",
+		"761697ee-3e43-4595-932f-c4738f182f27",
+		"4d1caec5-b80a-47eb-a0ea-e6ddf2ec4360"
+	],
+	"folders_order": [],
+	"protocolProfileBehavior": {},
+	"folders": [],
+	"requests": [
+		{
+			"id": "20af98c6-4b02-482a-9378-5af5c4dc8d45",
+			"name": "post",
+			"url": "http://localhost:3000/api/fo/new",
+			"description": "",
+			"data": [
+				{
+					"key": "codigo",
+					"value": "003",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "id",
+					"value": "4",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "musico",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "url",
+					"value": "https://unsplash.com/photos/oSq5ejr23so",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "thumbnailUrl",
+					"value": "https://unsplash.com/s/photos/musica",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "album",
+					"value": "bajo",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "4d1caec5-b80a-47eb-a0ea-e6ddf2ec4360",
+			"name": "delete",
+			"url": "http://localhost:3000/api/fo/delete/002",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "761697ee-3e43-4595-932f-c4738f182f27",
+			"name": "put",
+			"url": "http://localhost:3000/api/fo/update/004",
+			"description": "",
+			"data": [
+				{
+					"key": "ajustar",
+					"value": "ADD",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tipo",
+					"value": "guitarra",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c3b876b2-c81d-49ee-ab84-c138e5137f78",
+			"name": "get",
+			"url": "http://localhost:3000/api/fo/all",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		}
+	]
+}
