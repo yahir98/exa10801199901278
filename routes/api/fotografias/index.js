@@ -28,9 +28,9 @@ router.post('/new', function(req, res){
        req.body,
        {
            "id": parseInt(req.body.id),
-           "title": req.body.nombre,
-           "url":req.body.apartament,
-           "thumbnailUrl":req.body.thum,
+           "title":req.body.title,
+           "url":req.body.url,
+           "thum":req.body.thum,
            "album ":req.body.album
            //"cuotaMensual": parseFloat(req.body.cuotaMensual)
        }
@@ -101,7 +101,7 @@ router.delete(
     '/delete/:foCodigo',
     function( req, res) {
       foCollection = fileModel.getfotografias();
-      var foCodigoToDelete  = req.params.conCodigo;
+      var foCodigoToDelete  = req.params.foCodigo;
       var newfoCollection = foCollection.filter(
         function(o, i){
           return foCodigoToDelete !== o.codigo;
